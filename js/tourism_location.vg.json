@@ -6,21 +6,21 @@
   "layer": [
     {
       "data": {
-        "url": "ne_10m.json",
+        "url": "java_island.json",
         "format": {"type": "topojson", "feature": "ne_10m_admin_0_countries_idn"}
       },
       "mark": {"type": "geoshape", "fill": "gray", "stroke": "white"}
     },
     {
       "data": {
-        "url": "ne_10m.json",
+        "url": "java_island.json",
         "format": {"type": "topojson", "feature": "ne_10m_graticules_10"}
       },
       "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
     },
     {
       "data": {
-        "url": "data/tourism_with_id_translated.csv" 
+        "url": "tourism_with_id_translated.csv" 
       },
       "mark": {"type": "circle", "size": 5, "color": "red", "opacity": 0.5},
       "encoding": {
