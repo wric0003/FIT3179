@@ -26,7 +26,8 @@
       "mark": {"type": "circle", "size": 5, "color": "red", "opacity": 0.5},
       "encoding": {
         "longitude": {"field": "Long", "type": "quantitative"},
-        "latitude": {"field": "Lat", "type": "quantitative"}
+        "latitude": {"field": "Lat", "type": "quantitative"},
+        "tooltip": [{"field": "Place_Name", "type": "nominal"}]
       }
     }
   ]
