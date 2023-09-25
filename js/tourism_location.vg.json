@@ -1,8 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 800,
-  "height": 450,
+  "height": 800,
   "title": "Tourism Locations in Java, Indonesia",
+  "projection": {"type":"equirectangular"},
   "layer": [
     {
       "data": {
