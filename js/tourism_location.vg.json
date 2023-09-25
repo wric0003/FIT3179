@@ -20,7 +20,7 @@
     },
     {
       "data": {
-        "url": "tourism_with_id_translated.csv" 
+        "url": "https://wric0003.github.io/FIT3179/js/tourism_with_id_translated.csv" 
       },
       "mark": {"type": "circle", "size": 5, "color": "red", "opacity": 0.5},
       "encoding": {
