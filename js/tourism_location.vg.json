@@ -1,9 +1,13 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 800,
-  "height": 800,
+  "height": 600,
   "title": "Tourism Locations in Java, Indonesia",
-  "projection": {"type":"equirectangular"},
+  "projection": {
+    "type": "equirectangular",
+    "center": [110, -7],
+    "scale": 4000 
+  },
   "layer": [
     {
       "data": {
@@ -27,7 +31,7 @@
       "encoding": {
         "longitude": {"field": "Long", "type": "quantitative"},
         "latitude": {"field": "Lat", "type": "quantitative"},
-        "tooltip": [{"field": "Place_Name", "type": "nominal"}]
+        "tooltip": [{"field": "Place_Name", "type": "nominal", "title": "Place Name"}]
       }
     }
   ]
