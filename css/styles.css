@@ -18,6 +18,14 @@ body {
     padding-top: 35px;
 }
 
+#dot_map {
+	width: 100%;
+}
+
+#line_chart {
+	width: 100%;
+}
+
 .vis-container {
 	width: 100%; /* Set the width as a percentage of the parent container */
 	max-width: 800px; /* Set a maximum width to limit the size */
