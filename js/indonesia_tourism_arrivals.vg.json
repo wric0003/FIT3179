@@ -1,6 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "Indonesia Tourism Arrivals",
+    "width": 500,
+    "height": 400,
     "data": {
         "url": "https://wric0003.github.io/FIT3179/js/indonesia_tourism_arrivals.csv"
     },
