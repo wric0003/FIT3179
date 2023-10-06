@@ -28,7 +28,6 @@ body {
 
 .vis-container {
 	width: 100%; /* Set the width as a percentage of the parent container */
-	max-width: 800px; /* Set a maximum width to limit the size */
 	height: auto; /* Automatically adjust the height to maintain aspect ratio */
   }
   
