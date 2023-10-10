@@ -31,10 +31,16 @@
           "color": {
             "field": "sector",
             "type": "nominal",
-            "title": "Sector"
+            "title": "Sector",
+            "legend": {
+                "title": "Product Sector", 
+                "orient": "left", 
+                "labelLimit": 0, 
+                "symbolSize": 150 
+              }
           },
           "tooltip": [
-            {"field": "sector", "type": "nominal", "title": "Sector"},
+            {"field": "sector", "type": "nominal", "title": "Product Sector"},
             {"field": "revenue", "type": "quantitative", "title": "Revenue (in Billion Rupiah)", "format": ","}
           ],
           "opacity": {
