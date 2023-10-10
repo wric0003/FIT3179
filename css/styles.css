@@ -26,6 +26,10 @@ body {
 	width: 100%;
 }
 
+#stacked_area_chart {
+	width: 100%;
+}
+
 .vis-container {
 	width: 100%; /* Set the width as a percentage of the parent container */
 	height: auto; /* Automatically adjust the height to maintain aspect ratio */
