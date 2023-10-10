@@ -89,7 +89,7 @@
       </div>
       <div class="pure-u-1-2">
         <div class="vis-container">
-          <div id ="line_chart"></div>
+          <div id ="stacked_area_chart"></div>
         </div>
       </div>
     </div>
@@ -110,7 +110,7 @@
     var spec2 = "js/indonesia_tourism_arrivals.vg.json"; 
 
     // Embed the second visualization
-    vegaEmbed('#stacked_area_chart', spec2, { "actions": false }).then(function (result) {
+    vegaEmbed('#line_chart', spec2, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 
