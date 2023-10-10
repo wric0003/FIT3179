@@ -31,7 +31,10 @@
       "encoding": {
         "longitude": {"field": "Long", "type": "quantitative"},
         "latitude": {"field": "Lat", "type": "quantitative"},
-        "tooltip": [{"field": "Place_Name", "type": "nominal", "title": "Place Name"}]
+        "tooltip": [
+          {"field": "Place_Name", "type": "nominal", "title": "Place Name"},
+          {"field": "translated_description", "type": "nominal", "title": "Description"}
+        ]
       }
     }
   ]

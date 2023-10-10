@@ -2,19 +2,36 @@ body *{
     font-family: 'Open Sans', sans-serif;
 }
 
+.header{
+    text-align: center;
+    background-color: white;
+    width:  fit-content;
+    padding: 1em;
+    margin-bottom: 40px;
+}
+
 h1 {
     font-weight: 900;
+    font-size: xx-large;
+}
+
+p {
+    text-align: justify;
 }
 
 body {
     background-color: lightgray;
+    
 }
 
 .page {
-    width: 100vw;
-    background-color: white;
+    
+    background-color: lightgray;
+    background-image: url('../images/indonesia.jpg'); /* Specify the path to your background image */
+    background-size: cover; /* Make the background image cover the entire page */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
     margin: auto;
-    padding: 50px;
+    padding: 1em;
     padding-top: 35px;
 }
 
@@ -50,7 +67,10 @@ h1 {
 }
 
 .pure-g {
+    background-color: white;
+    padding: 1em;
     margin-bottom: 40px;
+    align-items: center;
 }
 
 .small-font {
