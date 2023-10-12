@@ -26,7 +26,13 @@
     ],
     "layer": [
         {
-            "mark": "point",
+            "mark": {
+                "type": "line",
+                "point": {
+                    "filled": false,
+                    "fill": "white"
+                  }
+              },
             "encoding": {
                 "x": {
                     "timeUnit": "year",
@@ -51,21 +57,6 @@
                         "type": "ordinal"
                     }
                 ]
-            }
-        },
-        {
-            "mark": "line",
-            "encoding": {
-                "x": {
-                    "timeUnit": "year",
-                    "field": "Year",
-                    "type": "ordinal"
-                },
-                "y": {
-                    "field": "Arrival",
-                    "type": "quantitative",
-                    "title" : "Arrival Count"
-                }
             }
         },
         {
