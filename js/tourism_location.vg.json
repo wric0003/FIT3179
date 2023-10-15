@@ -3,10 +3,40 @@
   "title": "Tourism Locations in Java, Indonesia",
   "width": "container",
   "height": 400,
+  "params": [
+    {
+      "name": "zoom_level",
+      "value": 5000,
+      "bind": {
+        "input": "range",
+        "min": 5000,
+        "max": 60000,
+        "step": 100,
+        "name": "Zoom: "
+      }
+    },
+    {
+      "name": "center_to",
+      "value": [110.416664, -6.966667],
+      "bind": {
+        "input": "select",
+        "options": [
+          [112.768845, 	-7.250445],
+          [106.816666, -6.200000],
+          [110.370529, -7.797068],
+          [115.216667, -8.650000],
+          [107.608238, -6.914864],
+          [110.416664, -6.966667]
+        ],
+        "labels": ["Surabaya", "Jakarta", "Yogyakarta", "Bali", "Bandung", "Semarang"],
+        "name": "Map Centre: "
+      }
+    }
+  ],
   "projection": {
     "type": "equirectangular",
-    "center": [110, -7],
-    "scale": 4000 
+    "center": {"expr": "center_to"},
+    "scale": {"expr": "zoom_level"} 
   },
   "layer": [
     {
