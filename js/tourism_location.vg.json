@@ -25,7 +25,7 @@
     },
     {
       "data": {
-        "url": "https://wric0003.github.io/FIT3179/js/js/tourism_locations.csv" 
+        "url": "https://wric0003.github.io/FIT3179/js/tourism_locations.csv" 
       },
       "mark": {"type": "circle", "size": 100, "color": "red", "opacity": 0.15},
       "encoding": {
