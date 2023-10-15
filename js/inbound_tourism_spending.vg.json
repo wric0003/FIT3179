@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "Inbound Tourism Spending",
-    "width": 500,
+    "width": "container",
     "height": 400,
     "data": {
       "url": "https://wric0003.github.io/FIT3179/js/top5_sectors.csv"

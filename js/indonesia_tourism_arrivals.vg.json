@@ -1,38 +1,31 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "Indonesia Tourism Arrivals",
-    "width": 500,
+    "width": "container",
     "height": 400,
     "data": {
         "url": "https://wric0003.github.io/FIT3179/js/indonesia_tourism_arrivals.csv"
     },
-    "params": [
-        {
-            "name": "Arrival_Above",
-            "value": 4000000,
-            "bind": {
-                "input": "range",
-                "min": 4000000,
-                "max": 16000000,
-                "step": 1000000,
-                "name": "Minimum Arrival Count: "
-            }
-        }
-    ],
-    "transform": [
-        {
-            "filter": "datum.Arrival > Arrival_Above"
-        }
-    ],
     "layer": [
         {
+            "params": [
+                {
+                    "name": "brush",
+                    "select": {
+                        "type": "interval",
+                        "encodings": [
+                            "x"
+                        ]
+                    }
+                }
+            ],
             "mark": {
                 "type": "line",
                 "point": {
                     "filled": false,
                     "fill": "white"
-                  }
-              },
+                }
+            },
             "encoding": {
                 "x": {
                     "timeUnit": "year",
@@ -56,10 +49,24 @@
                         "title": "Year",
                         "type": "ordinal"
                     }
-                ]
+                ],
+                "opacity": {
+                    "condition": {
+                        "param": "brush",
+                        "value": 1
+                    },
+                    "value": 0.7
+                }
             }
         },
         {
+            "transform": [
+                {
+                    "filter": {
+                        "param": "brush"
+                    }
+                }
+            ],
             "mark": "rule",
             "encoding": {
                 "y": {
@@ -75,10 +82,10 @@
                 },
                 "tooltip": [
                     {
-                    "aggregate": "mean",
-                    "field": "Arrival",
-                    "type": "quantitative",
-                    "format" : ","
+                        "aggregate": "mean",
+                        "field": "Arrival",
+                        "type": "quantitative",
+                        "format": ","
                     }
                 ]
             }
