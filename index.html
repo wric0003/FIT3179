@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Tourism in Indonesia</title> 
+  <title>Tourism in Indonesia</title>
   <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
@@ -28,7 +28,7 @@
 
     <!-- pure grid group -->
     <div class="header">
-        <h1>Tourism in Indonesia</h1>
+      <h1>Tourism in Indonesia</h1>
     </div>
     <!-- end pure grid group -->
 
@@ -38,12 +38,35 @@
         <div class="description description-left">
           <!-- interactivity to be added -->
           <h2>Tourism Locations in Java, Indonesia</h2>
-          <p>Java, Indonesia, boasts a variety of captivating tourism destinations centered around key cities like Jakarta, Yogyakarta, Bandung, Semarang, and Surabaya. In Jakarta, travelers encounter a fusion of modernity and heritage, while Yogyakarta's cultural richness is exemplified by ancient temples like Borobudur and Prambanan. Bandung offers scenic beauty amidst tea plantations, while Semarang blends Dutch colonial charm with vibrant markets. Surabaya, Java's second-largest city, serves as a dynamic urban gateway to pristine beaches and islands along the northern coast. These cities collectively showcase Java's diverse attractions, making it an appealing destination for culture, history, and natural beauty enthusiasts. </p>
+          <p>Java, Indonesia, boasts a variety of captivating tourism destinations centered around key cities like
+            Jakarta, Yogyakarta, Bandung, Semarang, and Surabaya. In Jakarta, travelers encounter a fusion of modernity
+            and heritage, while Yogyakarta's cultural richness is exemplified by ancient temples like Borobudur and
+            Prambanan. Bandung offers scenic beauty amidst tea plantations, while Semarang blends Dutch colonial charm
+            with vibrant markets. Surabaya, Java's second-largest city, serves as a dynamic urban gateway to pristine
+            beaches and islands along the northern coast. These cities collectively showcase Java's diverse attractions,
+            making it an appealing destination for culture, history, and natural beauty enthusiasts. </p>
         </div>
       </div>
       <div class="pure-u-3-5">
         <div class="vis-container">
-          <div id ="dot_map"></div>
+          <div id="dot_map"></div>
+        </div>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-2-5">
+        <div class="description description-left">
+          <!-- interactivity to be added -->
+          <h2>Tourism Locations in Bali, Indonesia</h2>
+          <p>Bali blablablablabal</p>
+        </div>
+      </div>
+      <div class="pure-u-3-5">
+        <div class="vis-container">
+          <div id="dot_map2"></div>
         </div>
       </div>
     </div>
@@ -54,12 +77,20 @@
         <div class="description description-left">
           <h2>Increase in Tourism Arrivals for Indonesia</h2>
           <p>
-            Indonesia has witnessed a remarkable surge in tourism arrivals over the period from 1995 to 2020. During these years, the country's allure as a travel destination has grown exponentially, attracting a rising number of visitors from across the globe. This upward trajectory can be attributed to Indonesia's stunning natural landscapes, including pristine beaches, lush rainforests, and unique wildlife. Additionally, the preservation of cultural heritage, iconic landmarks, and vibrant festivals have further enticed tourists. Indonesia's efforts to improve infrastructure and enhance accessibility have played a pivotal role in accommodating the increasing influx of travelers. This steady growth in tourism arrivals underscores Indonesia's enduring appeal as an exotic and culturally rich destination for tourists seeking diverse experiences. </p>
+            Indonesia has witnessed a remarkable surge in tourism arrivals over the period from 1995 to 2020. During
+            these years, the country's allure as a travel destination has grown exponentially, attracting a rising
+            number of visitors from across the globe. This upward trajectory can be attributed to Indonesia's stunning
+            natural landscapes, including pristine beaches, lush rainforests, and unique wildlife. Additionally, the
+            preservation of cultural heritage, iconic landmarks, and vibrant festivals have further enticed tourists.
+            Indonesia's efforts to improve infrastructure and enhance accessibility have played a pivotal role in
+            accommodating the increasing influx of travelers. This steady growth in tourism arrivals underscores
+            Indonesia's enduring appeal as an exotic and culturally rich destination for tourists seeking diverse
+            experiences. </p>
         </div>
       </div>
       <div class="pure-u-3-5">
         <div class="vis-container">
-          <div id ="line_chart"></div>
+          <div id="line_chart"></div>
         </div>
       </div>
     </div>
@@ -72,12 +103,20 @@
           <h2>Inbound Tourism Expenditure to Indonesia by Product at
             Current Prices</h2>
           <p>
-            From 2017 to 2021, Indonesia experienced a notable rise in inbound tourism expenditure, reflecting its growing popularity among global travelers. During this period, visitors to Indonesia significantly increased their spending across various sectors. Notably, expenditures on accommodation services for visitors, food and beverage-serving services, and air passenger transport services demonstrated substantial growth. This upward trend underscores Indonesia's ability to cater to the evolving preferences of tourists, offering diverse experiences from luxurious stays to culinary delights and convenient transportation options. The country's appeal as a tourist destination is not only measured by its natural beauty and cultural treasures but also by its ability to provide high-quality services and experiences that continue to attract travelers from around the world.</p>
+            From 2017 to 2021, Indonesia experienced a notable rise in inbound tourism expenditure, reflecting its
+            growing popularity among global travelers. During this period, visitors to Indonesia significantly increased
+            their spending across various sectors. Notably, expenditures on accommodation services for visitors, food
+            and beverage-serving services, and air passenger transport services demonstrated substantial growth. This
+            upward trend underscores Indonesia's ability to cater to the evolving preferences of tourists, offering
+            diverse experiences from luxurious stays to culinary delights and convenient transportation options. The
+            country's appeal as a tourist destination is not only measured by its natural beauty and cultural treasures
+            but also by its ability to provide high-quality services and experiences that continue to attract travelers
+            from around the world.</p>
         </div>
       </div>
       <div class="pure-u-3-5">
         <div class="vis-container">
-          <div id ="stacked_area_chart"></div>
+          <div id="stacked_area_chart"></div>
         </div>
       </div>
     </div>
@@ -85,7 +124,7 @@
 
 
   </div> <!-- end page -->
- 
+
   <script type="text/javascript">
 
     var spec1 = "js/tourism_location.vg.json"; //
@@ -95,7 +134,7 @@
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 
-    var spec2 = "js/indonesia_tourism_arrivals.vg.json"; 
+    var spec2 = "js/indonesia_tourism_arrivals.vg.json";
 
     // Embed the second visualization
     vegaEmbed('#line_chart', spec2, { "actions": false }).then(function (result) {
@@ -103,10 +142,18 @@
     }).catch(console.error);
 
 
-    var spec3 = "js/inbound_tourism_spending.vg.json"; 
+    var spec3 = "js/inbound_tourism_spending.vg.json";
 
     // Embed the third visualization
     vegaEmbed('#stacked_area_chart', spec3, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+
+    var spec4 = "js/bali_tourism.vg.json"; //
+
+    // Embed the first visualization
+    vegaEmbed('#dot_map2', spec4, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
   </script>
