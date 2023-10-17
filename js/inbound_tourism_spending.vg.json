@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Inbound Tourism Spending",
+    "title": "Inbound Tourism Spending (Top 5 Sectors each Year)",
     "width": "container",
     "height": 400,
     "data": {
