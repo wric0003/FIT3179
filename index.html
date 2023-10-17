@@ -133,6 +133,32 @@
     </div>
     <!-- end pure grid group -->
 
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-3-5">
+        <div class="vis-container">
+          <div id="pie_chart"></div>
+        </div>
+      </div>
+      <div class="pure-u-2-5">
+        <div class="description">
+          <h2>pie chart</h2>
+          <p>
+            Indonesia has witnessed a remarkable surge in tourism arrivals over the period from 1995 to 2020. During
+            these years, the country's allure as a travel destination has grown exponentially, attracting a rising
+            number of visitors from across the globe. This upward trajectory can be attributed to Indonesia's stunning
+            natural landscapes, including pristine beaches, lush rainforests, and unique wildlife. Additionally, the
+            preservation of cultural heritage, iconic landmarks, and vibrant festivals have further enticed tourists.
+            Indonesia's efforts to improve infrastructure and enhance accessibility have played a pivotal role in
+            accommodating the increasing influx of travelers. This steady growth in tourism arrivals underscores
+            Indonesia's enduring appeal as an exotic and culturally rich destination for tourists seeking diverse
+            experiences. </p>
+        </div>
+      </div>
+      
+    </div>
+    <!-- end pure grid group -->
+
 
   </div> <!-- end page -->
 
@@ -185,6 +211,13 @@
 
     // Embed the third visualization
     vegaEmbed('#stacked_area_chart', spec3, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    var spec4 = "js/pie_chart.vg.json";
+
+    // Embed the third visualization
+    vegaEmbed('#pie_chart', spec4, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 
