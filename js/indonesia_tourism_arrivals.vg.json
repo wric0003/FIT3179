@@ -1,6 +1,9 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Indonesia Tourism Arrivals",
+    "title": {
+        "text": "Indonesia Tourism Arrivals",
+        "subtitle": "Click and Drag on the Visualisation to Change the Range of Years"
+      },
     "width": "container",
     "height": 400,
     "data": {
