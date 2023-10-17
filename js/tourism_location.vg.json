@@ -62,8 +62,8 @@
         "longitude": {"field": "Long", "type": "quantitative"},
         "latitude": {"field": "Lat", "type": "quantitative"},
         "tooltip": [
-          {"field": "Place", "type": "nominal", "title": "Place Name"},
-          {"field": "Description", "type": "nominal", "title": "Description"}
+          {"field": "Place", "type": "nominal", "title": "Place Name"}
+          
         ]
       }
     }
