@@ -6,6 +6,13 @@
     "data": {
         "url": "https://wric0003.github.io/FIT3179/js/top5_arrivals.csv"
     },
+    "selection": {
+        "country_highlight": {
+          "type": "multi",
+          "fields": ["Country"],
+          "bind": "legend"
+         }
+    },
     "mark": {
         "type": "arc",
         "tooltip": true
@@ -21,7 +28,28 @@
         },
         "color": {
             "field": "Country",
-            "type": "nominal"
-        }
+            "type": "nominal",
+            "legend": {
+                "title": "Country", 
+                "orient": "left", 
+                "labelLimit": 0, 
+                "symbolSize": 150 
+              }
+        },
+        "opacity": {
+            "condition": {"selection": "country_highlight", "value": 1},
+            "value": 0.3
+        },
+        "tooltip": [
+            {
+              "field": "Country",
+              "title": "Country"
+            },
+            {
+              "field": "Arrivals",
+              "title": "Arrivals",
+              "format": ","
+            }
+          ]
     }
 }
